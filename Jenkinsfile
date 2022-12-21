@@ -16,7 +16,7 @@ pipeline {
 
     stage('Test') {
       steps {
-        sh 'mvn test -DargLine="-Xms500m -Xmx1000m"'
+        sh 'mvn clean test -DargLine="-Xms500m -Xmx1000m"'
       }
     }
 
