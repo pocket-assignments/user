@@ -10,13 +10,13 @@ pipeline {
 
     stage('Build') {
       steps {
-        sh 'mvn clean package -Dmaven.test.skip -DargLine="-Xmx1024m"'
+        sh 'mvn clean package -Dmaven.test.skip -DargLine="-Xms500m -Xmx1000m"'
       }
     }
 
     stage('Test') {
       steps {
-        sh 'mvn test -DargLine="-Xmx1024m"'
+        sh 'mvn test -DargLine="-Xms500m -Xmx1000m"'
       }
     }
 
