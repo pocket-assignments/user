@@ -1,7 +1,7 @@
 pipeline {
   agent {
-    docker {
-      image 'maven:3.8.6-amazoncorretto-17'
+    node {
+      label 'ecs'
     }
 
   }
