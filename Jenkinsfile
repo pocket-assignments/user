@@ -1,6 +1,9 @@
 pipeline {
   agent {
-    label 'ecs'
+    node {
+      label 'ecs-agent'
+    }
+
   }
   stages {
     stage('Pull code') {
