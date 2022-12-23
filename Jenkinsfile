@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    node {
-      label 'ecs'
-    }
-
-  }
+  agent any
   stages {
     stage('Pull code') {
       agent any
