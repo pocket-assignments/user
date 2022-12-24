@@ -6,13 +6,6 @@ pipeline {
 
   }
   stages {
-    stage('Tools') {
-      agent any
-      steps {
-        tool(name: 'maven', type: 'maven')
-      }
-    }
-
     stage('Pull code') {
       steps {
         git(url: 'https://github.com/pocket-assignments/user.git', branch: 'main', changelog: true, poll: true)
@@ -31,5 +24,8 @@ pipeline {
       }
     }
 
+  }
+  tools {
+    maven 'Maven'
   }
 }
