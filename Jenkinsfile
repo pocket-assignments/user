@@ -31,23 +31,23 @@ pipeline {
   post {
     success {
       step([
-                                                                      $class: "GitHubCommitStatusSetter",
-                                                                      reposSource: [$class: "ManuallyEnteredRepositorySource", url: "https://github.com/pocket-assignments/user.git"],
-                                                                      contextSource: [$class: "ManuallyEnteredCommitContextSource", context: "ci/jenkins/build-status"],
-                                                                      errorHandlers: [[$class: "ChangingBuildStatusErrorHandler", result: "UNSTABLE"]],
-                                                                      statusResultSource: [ $class: "ConditionalStatusResultSource", results: [[$class: "AnyBuildResult", message: 'Build succeeded', state: 'SUCCESS']] ]
-                                                                  ])
-        slackSend "Build deployed successfully - ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)"
-      }
-
-      failure {
-        step([
                                                                                       $class: "GitHubCommitStatusSetter",
                                                                                       reposSource: [$class: "ManuallyEnteredRepositorySource", url: "https://github.com/pocket-assignments/user.git"],
                                                                                       contextSource: [$class: "ManuallyEnteredCommitContextSource", context: "ci/jenkins/build-status"],
                                                                                       errorHandlers: [[$class: "ChangingBuildStatusErrorHandler", result: "UNSTABLE"]],
-                                                                                      statusResultSource: [ $class: "ConditionalStatusResultSource", results: [[$class: "AnyBuildResult", message: 'Build failed', state: 'FAILURE']] ]
+                                                                                      statusResultSource: [ $class: "ConditionalStatusResultSource", results: [[$class: "AnyBuildResult", message: 'Build succeeded', state: 'SUCCESS']] ]
                                                                                   ])
+        slackSend(message: "Build deployed successfully - ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)")
+      }
+
+      failure {
+        step([
+                                                                                                          $class: "GitHubCommitStatusSetter",
+                                                                                                          reposSource: [$class: "ManuallyEnteredRepositorySource", url: "https://github.com/pocket-assignments/user.git"],
+                                                                                                          contextSource: [$class: "ManuallyEnteredCommitContextSource", context: "ci/jenkins/build-status"],
+                                                                                                          errorHandlers: [[$class: "ChangingBuildStatusErrorHandler", result: "UNSTABLE"]],
+                                                                                                          statusResultSource: [ $class: "ConditionalStatusResultSource", results: [[$class: "AnyBuildResult", message: 'Build failed', state: 'FAILURE']] ]
+                                                                                                      ])
           slackSend(failOnError: true, message: "Build failed  - ${env.JOB_NAME} ${env.BUILD_NUMBER} (<${env.BUILD_URL}|Open>)")
         }
 
