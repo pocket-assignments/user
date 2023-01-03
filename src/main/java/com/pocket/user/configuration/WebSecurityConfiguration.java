@@ -1,4 +1,4 @@
-package com.app.pocket.configuration;
+package com.pocket.user.configuration;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

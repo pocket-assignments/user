@@ -1,7 +1,7 @@
-package com.app.pocket.services;
+package com.pocket.user.services;
 
-import com.app.pocket.dao.RoleDao;
-import com.app.pocket.models.Role;
+import com.pocket.user.dao.RoleDao;
+import com.pocket.user.models.Role;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,6 +1,6 @@
-package com.app.pocket.pojo;
+package com.pocket.user.pojo;
 
-import com.app.pocket.models.User;
+import com.pocket.user.models.User;
 
 public class JwtResponse {
 

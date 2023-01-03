@@ -1,8 +1,8 @@
-package com.app.pocket.controllers;
+package com.pocket.user.controllers;
 
-import com.app.pocket.models.User;
-import com.app.pocket.pojo.Registration;
-import com.app.pocket.services.UserService;
+import com.pocket.user.models.User;
+import com.pocket.user.pojo.Registration;
+import com.pocket.user.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;

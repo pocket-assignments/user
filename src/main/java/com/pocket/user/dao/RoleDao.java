@@ -1,6 +1,6 @@
-package com.app.pocket.dao;
+package com.pocket.user.dao;
 
-import com.app.pocket.models.Role;
+import com.pocket.user.models.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,7 +1,7 @@
-package com.app.pocket.controllers;
+package com.pocket.user.controllers;
 
-import com.app.pocket.models.Role;
-import com.app.pocket.services.RoleService;
+import com.pocket.user.models.Role;
+import com.pocket.user.services.RoleService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

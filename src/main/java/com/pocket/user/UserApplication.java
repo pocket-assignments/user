@@ -1,4 +1,4 @@
-package com.app.pocket;
+package com.pocket.user;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

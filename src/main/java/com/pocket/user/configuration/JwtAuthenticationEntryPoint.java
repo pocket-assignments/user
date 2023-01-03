@@ -1,4 +1,4 @@
-package com.app.pocket.configuration;
+package com.pocket.user.configuration;
 
 
 import org.springframework.security.core.AuthenticationException;
