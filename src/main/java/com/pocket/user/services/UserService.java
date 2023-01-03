@@ -1,10 +1,10 @@
-package com.app.pocket.services;
+package com.pocket.user.services;
 
-import com.app.pocket.dao.RoleDao;
-import com.app.pocket.dao.UserDao;
-import com.app.pocket.models.Role;
-import com.app.pocket.models.User;
-import com.app.pocket.pojo.Registration;
+import com.pocket.user.dao.RoleDao;
+import com.pocket.user.dao.UserDao;
+import com.pocket.user.models.Role;
+import com.pocket.user.models.User;
+import com.pocket.user.pojo.Registration;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

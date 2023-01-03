@@ -1,8 +1,8 @@
-package com.app.pocket.controllers;
+package com.pocket.user.controllers;
 
-import com.app.pocket.pojo.JwtRequest;
-import com.app.pocket.pojo.JwtResponse;
-import com.app.pocket.services.JwtService;
+import com.pocket.user.pojo.JwtRequest;
+import com.pocket.user.pojo.JwtResponse;
+import com.pocket.user.services.JwtService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;

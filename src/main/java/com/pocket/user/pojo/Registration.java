@@ -1,4 +1,4 @@
-package com.app.pocket.pojo;
+package com.pocket.user.pojo;
 
 public class Registration {
 

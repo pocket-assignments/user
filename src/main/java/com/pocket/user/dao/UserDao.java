@@ -1,6 +1,6 @@
-package com.app.pocket.dao;
+package com.pocket.user.dao;
 
-import com.app.pocket.models.User;
+import com.pocket.user.models.User;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

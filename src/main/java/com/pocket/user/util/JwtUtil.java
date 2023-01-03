@@ -1,4 +1,4 @@
-package com.app.pocket.util;
+package com.pocket.user.util;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

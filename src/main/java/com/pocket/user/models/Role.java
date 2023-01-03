@@ -1,4 +1,4 @@
-package com.app.pocket.models;
+package com.pocket.user.models;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

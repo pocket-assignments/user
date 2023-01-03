@@ -1,7 +1,7 @@
-package com.app.pocket.configuration;
+package com.pocket.user.configuration;
 
-import com.app.pocket.services.JwtService;
-import com.app.pocket.util.JwtUtil;
+import com.pocket.user.services.JwtService;
+import com.pocket.user.util.JwtUtil;
 import io.jsonwebtoken.ExpiredJwtException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

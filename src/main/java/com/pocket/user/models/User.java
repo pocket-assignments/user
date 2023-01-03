@@ -1,4 +1,4 @@
-package com.app.pocket.models;
+package com.pocket.user.models;
 
 import javax.persistence.*;
 import java.util.Set;

@@ -1,10 +1,10 @@
-package com.app.pocket.services;
+package com.pocket.user.services;
 
-import com.app.pocket.dao.UserDao;
-import com.app.pocket.models.User;
-import com.app.pocket.pojo.JwtRequest;
-import com.app.pocket.pojo.JwtResponse;
-import com.app.pocket.util.JwtUtil;
+import com.pocket.user.dao.UserDao;
+import com.pocket.user.models.User;
+import com.pocket.user.pojo.JwtRequest;
+import com.pocket.user.pojo.JwtResponse;
+import com.pocket.user.util.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
